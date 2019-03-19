@@ -16,7 +16,7 @@ Install cmake by
 
 `brew install cmake`
 
-Getting the Faust source code
+Getting the [Faust source code](https://github.com/grame-cncm/faust)
 
 ```
 git clone https://github.com/grame-cncm/faust.git
@@ -37,7 +37,7 @@ Install [Git](https://desktop.github.com)
 
 Install [MSYS2](http://www.msys2.org)
 
-Getting the Faust source code
+Getting the [Faust source code](https://github.com/grame-cncm/faust)
 
 ```
 git clone https://github.com/grame-cncm/faust.git
