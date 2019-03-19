@@ -33,6 +33,8 @@ sudo make install
 
 ## Windows
 
+Install [Git](https://desktop.github.com)
+
 Install [MSYS2](http://www.msys2.org)
 
 Getting the Faust source code
