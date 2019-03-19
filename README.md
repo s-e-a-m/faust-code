@@ -12,6 +12,10 @@ or update it by
 
 `brew update && brew upgrade`
 
+Install cmake by
+
+`brew install cmake`
+
 Getting the Faust source code
 
 ```
