@@ -16,6 +16,10 @@ Install cmake by
 
 `brew install cmake`
 
+Install pkg-config by
+
+`brew install pkgconfig
+
 Getting the [Faust source code](https://github.com/grame-cncm/faust)
 
 ```
