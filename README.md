@@ -55,3 +55,12 @@ Install Faust by
 make
 sudo make install
 ```
+
+To update Faust, inside faust repo
+
+```
+git pull
+git submodule update --remote --merge
+make
+sudo make install
+```
