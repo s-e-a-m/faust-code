@@ -56,7 +56,7 @@ make
 sudo make install
 ```
 
-To update Faust, inside faust repo
+## To update Faust, inside faust repo
 
 ```
 git pull
