@@ -8,7 +8,7 @@ envelop         = abs : max ~ -(1.0/ma.SR) : max(ba.db2linear(-70)) : ba.linear2
 
 time = hslider("time", 0.0, 0, 23, 0.01);
 
-p = os.lf_sawpos(1/time);
+p = os.lf_sawpos(1/(time));
 
 distance = hslider("distance", 0.5, 0, 1, 0.01);
 
