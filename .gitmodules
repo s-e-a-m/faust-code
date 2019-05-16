@@ -1,3 +1,6 @@
 [submodule "fc1987nlre"]
 	path = fc1987nlre
 	url = https://github.com/s-e-a-m/fc1987nlre.git
+[submodule "fc1969alis"]
+	path = fc1969alis
+	url = https://github.com/s-e-a-m/fc1969alis.git
