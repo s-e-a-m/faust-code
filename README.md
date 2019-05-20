@@ -4,6 +4,12 @@ Faust Code - Base
 
 ## MacOS
 
+You can run the `faustmacos.sh` bash script to install or update **Faust** in a single command.
+
+It will install *Homebrew* with *cmake*, *pkg-config*, and *qt* and *Faust*.
+
+Otherwise you can do it manually by following instruction below.
+
 Install [Homebrew](https://brew.sh)
 
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
@@ -29,14 +35,13 @@ Install qt by
 Getting the [Faust source code](https://github.com/grame-cncm/faust)
 
 ```
-git clone https://github.com/grame-cncm/faust.git
-cd faust
-git submodule update --init
+git clone --recurse-submodules -v https://github.com/grame-cncm/faust.git
 ```
 
 Install Faust by
 
 ```
+cd faust
 make
 sudo make install
 ```
@@ -62,23 +67,21 @@ pacman -Su
 Getting the [Faust source code](https://github.com/grame-cncm/faust)
 
 ```
-git clone https://github.com/grame-cncm/faust.git
-cd faust
-git submodule update --init
+git clone --recurse-submodules -v https://github.com/grame-cncm/faust.git
 ```
 
 Install Faust by
 
 ```
+cd faust
 make
 sudo make install
 ```
 
-## To update Faust, inside faust repo
+## To update Faust
 
 ```
-git pull
-git submodule update --remote --merge
+git pull --recurse-submodules -v
 make
 sudo make install
 ```
