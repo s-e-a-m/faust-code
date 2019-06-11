@@ -1,8 +1,10 @@
 # faust-code
 
-Faust Code - Base
+All Faust Code - Base
 
-## MacOS
+## How to Install Faust
+
+### MacOS
 
 Install [Homebrew](https://brew.sh)
 
@@ -41,7 +43,7 @@ make
 sudo make install
 ```
 
-## Windows
+### Windows
 
 Install [Git](https://desktop.github.com)
 
@@ -74,7 +76,7 @@ make
 sudo make install
 ```
 
-## To update Faust, inside faust repo
+### To update Faust, inside faust repo
 
 ```
 git pull
@@ -82,3 +84,9 @@ git submodule update --remote --merge
 make
 sudo make install
 ```
+
+## Contributing
+
+New repo for each work named `fcYYYYsnwn`
+
+`git submodule add https://github.com/…`
