@@ -5,17 +5,12 @@
 
 say Will do, sir
 
-cd
+# ---- HOMEBREW ----
 
-cd Documents/
+command -v brew >/dev/null 2>&1 || { echo >&2 "Installing Homebrew Now"; \
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; }
 
-mkdir GitHub
-
-cd GitHub
-
-echo "Intalling HomeBrew"
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# ---- HOMEBREW: CMAKE PKGCONFIG QT ----
 
 echo "Intalling cmake, pkgconfig, and qt"
 
@@ -23,20 +18,25 @@ brew install cmake pkgconfig qt
 
 echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile
 
-echo "Cloning Faust repository into ~/Documents/GitHub"
+# ---- FAUST ----
 
-git clone https://github.com/grame-cncm/faust.git
+command -v faust2caqt >/dev/null 2>&1 || {
+echo "Installing Faust";
+echo "Creating ~/Documents/GitHub if doesn't exist";
+cd;
+mkdir -p Documents/GitHub;
+cd Documents/GitHub;
+echo "Cloning Faust repository into ~/Documents/GitHub";
+git clone --recurse-submodules https://github.com/grame-cncm/faust.git;}
 
-cd faust
+cd ~/Documents/GitHub/faust
 
-git submodule update --init
-
-echo "Intalling Faust"
+git pull --recurse-submodules -v
 
 make
 
 sudo make install
 
-say Congratulations! You have created a new element
-
 open .
+
+say Congratulations! You have created a new element
