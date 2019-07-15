@@ -48,6 +48,12 @@ make
 sudo make install
 ```
 
+#### Mojave permission issue
+
+```
+sudo chown -R $(whoami) $(brew --prefix)/*
+```
+
 ### Windows
 
 Install [Git](https://desktop.github.com)
