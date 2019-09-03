@@ -32,6 +32,10 @@ Install qt by
 
 `brew install qt`
 
+Install libsndfile by
+
+`brew install libsndfile`
+
 `echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile`
 
 Getting the [Faust source code](https://github.com/grame-cncm/faust)
