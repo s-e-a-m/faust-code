@@ -6,6 +6,8 @@ All Faust Code - Base
 
 ### MacOS
 
+Install Xcode [Xcode](https://apps.apple.com/it/app/xcode/id497799835?mt=12)
+
 You can run the `faustmacos.sh` bash script to install or update **Faust** in a single command.
 
 It will install *Homebrew* with *cmake*, *pkg-config*, and *qt* and *Faust*.
