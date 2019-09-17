@@ -90,6 +90,14 @@ make
 sudo make install
 ```
 
+### Linux Mint
+
+```
+apt install ninja-build gcc gdb clang
+make
+sudo make install
+```
+
 ### To update Faust, inside faust repo
 
 ```
