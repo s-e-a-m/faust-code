@@ -62,6 +62,8 @@ sudo chown -R $(whoami) $(brew --prefix)/*
 
 ### Windows
 
+Enable Developer Mode on Windows [Developer Mode](https://www.windowscentral.com/how-install-bash-shell-command-line-windows-10)
+
 Install [Git](https://desktop.github.com)
 
 Install [MSYS2](http://www.msys2.org)
