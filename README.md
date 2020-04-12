@@ -93,9 +93,31 @@ cd faust
 make
 sudo make install
 ```
+### Ubuntu & other Ubuntu distros
 
+Create a folder called _grame_, this will be the place where you'll download the Faust source code
+```
+mkdir grame
+```
+Getting the [Faust source code](https://github.com/grame-cncm/faust)
+```
+cd grame
+git clone --recurse-submodules -v https://github.com/grame-cncm/faust.git
+```
+Installing Faust on your machine
+```
+sudo apt-get install ninja-build gcc gdb clang pkg-config cmake make
+cd faust
+make
+sudo make install
+```
 ### Linux Mint
 
+Getting the [Faust source code](https://github.com/grame-cncm/faust)
+```
+git clone --recurse-submodules -v https://github.com/grame-cncm/faust.git
+```
+Installing Faust on your machine
 ```
 apt install ninja-build gcc gdb clang
 make
