@@ -104,7 +104,7 @@ Getting the [Faust source code](https://github.com/grame-cncm/faust)
 cd grame
 git clone --recurse-submodules -v https://github.com/grame-cncm/faust.git
 ```
-Installing Faust on your machine
+#### Installing Faust on your machine
 ```
 sudo apt-get update
 sudo apt-get install ninja-build gcc gdb clang pkg-config cmake make
@@ -112,6 +112,53 @@ cd faust
 make
 sudo make install
 ```
+
+#### Check if Faust has been compiled
+
+After the installation you should try `faust2` command on your favourite terminal, by tabbing you should be able to see all the _architectures_ available for your machine.
+
+If the step above doesn't have any effects, Faust has not been installed.
+
+If the step above is successful you should a similiar list on your terminal:
+```
+faust2alqt               faust2netjackconsole
+faust2alsa               faust2netjackqt
+faust2alsaconsole        faust2nodejs
+faust2android            faust2octave
+faust2androidunity       faust2osxiosunity
+--More--
+```
+
+#### Compile GUI apps
+
+You should now be able to compile apps, you should use either:
+- gtk
+- qt
+
+Combined with different audio manager such as _alsa_ or _jack_.
+
+These are two different libraries to compile GUI apps on UNIX platforms.
+
+##### Installing and linking _Qt_, _gtk_, _jack_ and _alsa_
+
+```
+sudo apt-get update
+sudo apt-get install alsa gtk-+2.0 libgtk2.0-dev libasound2-dev qt5-default
+sudo apt-get install -y jackd
+```
+
+##### Compile your first GUI
+
+You should now be able to compile GUI apps with one of the libraries just installed, try:
+```
+faust2jack -double your_awesome_project.dsp
+```
+
+Run the compiled executable:
+```
+./your_awesome_project
+```
+
 ### Linux Mint
 
 Getting the [Faust source code](https://github.com/grame-cncm/faust)
